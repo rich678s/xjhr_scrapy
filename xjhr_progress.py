@@ -29,7 +29,7 @@ class xjHr():
         
     def request(self,url):
         UA = random.choice(self.user_agent_list)
-        headers = {'headers':UA}
+        headers = {'User-Agent':UA}
         response = requests.get(url,headers=headers)  
         return response        
     
